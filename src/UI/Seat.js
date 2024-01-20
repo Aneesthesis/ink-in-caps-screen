@@ -20,7 +20,7 @@ function Seat({ active }) {
           />
         </g>
       </svg>
-      <div className="  text-opacity-80 text-base">Seats</div>
+      <div className="text-opacity-80 text-base">Seats</div>
     </div>
   );
 }
