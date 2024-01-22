@@ -24,21 +24,18 @@ function Navbar() {
 
       <main className="flex flex-col flex-grow space-y-5">
         {NavbarTabs.map((TabComponent, index) => (
-          <div
-            onClick={() => setActiveTab(index)}
-            className="relative"
-            key={index}
-          >
+          <div className="relative" key={index}>
             <div
+              onClick={() => setActiveTab(index)}
               tabIndex={index}
               className={`
-                ${
-                  activeTab === index
-                    ? "rounded-tl-[30px] rounded-bl-[30px] font-semibold text-black bg-[#F4F4F4]  ml-6"
-                    : "rounded-[46.56px] text-[#ddd1f7] mx-6"
-                }
-                flex items-center justify-center text-base font-['Inter'] h-[60px] border border-white border-opacity-30 cursor-pointer focus:outline-1
-              `}
+                
+                flex items-center justify-center text-base font-['Inter'] h-[60px] border border-white border-opacity-30 cursor-pointer focus:outline-1 mx-5
+              ${
+                activeTab === index
+                  ? "rounded-tl-[30px] rounded-bl-[30px] font-semibold text-black bg-[#F4F4F4] -mr-[2px]"
+                  : "rounded-[46.56px] text-[#ddd1f7]"
+              }`}
             >
               <TabComponent active={activeTab === index} />
             </div>

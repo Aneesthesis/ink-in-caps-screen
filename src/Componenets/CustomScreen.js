@@ -29,7 +29,7 @@ function CustomScreen() {
         <Header />
       </div>
 
-      <div className="flex relative space-x-[70.03px] w-[1529px] h-auto bg-[#FCFCFC] px-[39.94px] pt-[27.26px] mt-32 mr-[60.13px]">
+      <div className="flex relative space-x-[79.03px] w-[1529px] h-auto bg-[#FCFCFC] px-[39.94px] pt-[27.26px] mt-32 mr-[60.13px]">
         <section className="create-a-custom-offer flex flex-col space-y-4">
           <form>
             <div className="top flex flex-col items-center justify-center w-[676.38px] h-[276.85px] opacity-95 bg-[#F4F4F4] rounded border border-[#C9C9C9] mb-3">
@@ -149,7 +149,7 @@ function CustomScreen() {
             {offers.map((offer, index) => (
               <li
                 key={index}
-                className="relative w-[690.25px] min-h-[187.18px] py-4 opacity-95 flex space-x-4 rounded border border-[#C9C9C9]"
+                className="relative w-[640.25px] min-h-[187.18px] py-4 opacity-95 flex space-x-4 rounded border border-[#C9C9C9]"
               >
                 <img
                   className="pl-[10px] max-w-[150px] max-h-[130px] mt-2"
